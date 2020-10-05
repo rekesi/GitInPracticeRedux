@@ -1,5 +1,5 @@
 
-Git In Practice pdf - total of circa 273 now on 12
+Git In Practice pdf - total of circa 273 now on page 12(35 of 273)
 ##ASUS  http://192.168.0.23/altrepetty/api/stock_service.php
 
 ##ASUS http://192.168.0.23/altrepetty/admin/
