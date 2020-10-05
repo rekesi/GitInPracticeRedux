@@ -1,0 +1,186 @@
+
+
+##ASUS  http://192.168.0.23/altrepetty/api/stock_service.php
+
+##ASUS http://192.168.0.23/altrepetty/admin/
+
+##AVD rerouting to localhost
+##Use http://10.0.2.2 for the AVD Emulator 
+
+SHOW TABLES;
+
+CREATE TABLE urls (id int, url varchar(100), description varchar(100));
+
+
+DROP TABLE urls;
+
+
+CREATE TABLE users (
+user_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+user_name varchar(33) NOT NULL,
+first_name varchar(20) NOT NULL,
+last_name varchar(30) NOT NULL,
+email varchar(50) NOT NULL,
+facebook_url varchar(100),
+twitter_handle varchar(20)
+);
+
+DESCRIBE users;
+
+SHOW COLUMNS FROM users;
+
+ALTER TABLE users ADD bio varchar(1000);
+
+
+
+ALTER TABLE users ADD bio varchar(1000) DEFAULT "New Bio";
+
+ALTER TABLE users DROP COLUMN bio;
+
+To delete a single column from a table you can use this:
+ALTER TABLE table_name DROP COLUMN Column_name;
+
+To delete multiple columns, do this:
+ALTER TABLE table_name DROP COLUMN Column_name, DROP COLUMN Column_name;
+
+http://localhost/altreprac/utilities/show_error.php
+
+http://localhost/altreprac/utilities/show_error.php?error_message=There%27s%20been%20a%20problem%20connecting%20to%20the%20database.
+
+
+http://www.yellowtagmedia.com/phpMM2/ch08/scripts/show_error.php?error_message=There%27s%20been%20a%20problem%20connecting%20to%20the%20database.
+
+
+http://localhost/altreprac/utilities/show_error.php?error_message=%3Ca%20href=%22http://www.amctv.com/shows/breaking-bad%22%3EClick%20Here%20To%20Report%20Your%20Error%3C/a%3E
+
+
+http://yellowtagmedia.com/phpMM2/ch08/scripts/show_error.php?error_message=%3Ca%20href=%22http://www.amctv.com/shows/breaking-bad%22%3EClick%20Here%20To%20Report%20Your%20Error%3C/a%3E
+
+
+ALTER TABLE users
+ADD user_pic_path varchar(200);
+
+
+<?php
+echo "DOCUMENT ROOT: {$_SERVER['DOCUMENT_ROOT']}";
+?>
+// use that php to find the web server’s document root.
+DOCUMENT ROOT: C:/xampp/htdocs 
+
+
+// mysql table for images
+
+CREATE TABLE images (
+image_id int AUTO_INCREMENT PRIMARY KEY,
+filename varchar(200) NOT NULL,
+mime_type varchar(50) NOT NULL,
+file_size int NOT NULL,
+image_data mediumblob NOT NULL
+);
+
+
+
+DESCRIBE images;
+DESCRIBE urls;
+ALTER TABLE users ADD profile_pic_id int;
+SELECT image_id FROM images;
+SELECT * FROM users WHERE user_id=1;
+ALTER TABLE users
+DROP COLUMN profile_pic_id;
+DROP TABLE images;
+SELECT * FROM users;
+SELECT user_pic_path FROM users WHERE user_id=10;
+UPDATE users
+SET user_pic_path = "C:/xampp/htdocs/altreprac/uploads/profile_pics/1562016319-2014-11-04 16.26.57.jpg"
+WHERE user_id = 4 OR user_id = 6;
+UPDATE users
+SET user_name = "rek5",first_name ="rob5",last_name="eke5",email="rek5@gmail.com",twitter_handle="@robk5",bio="hmmm",user_pic_path = "C:/xampp/htdocs/altreprac/uploads/profile_pics/1562016319-2014-11-04 16.26.57.jpg"
+WHERE user_id = 5;
+
+
+
+--  change the TABLE users
+
+ALTER TABLE users
+ADD username VARCHAR(32) NOT NULL
+AFTER user_id,
+ADD password VARCHAR(16) NOT NULL
+AFTER username;
+
+SELECT * FROM users;
+
+ set sql_safe_updates = 0;-- To disable Safe Updates mode, run the following command prior to running your UPDATE statement:
+UPDATE users
+ SET username = user_name,
+ password = "chungmoo";
+ set sql_safe_updates = 1;-- To enable Safe Updates mode, run the following:
+
+
+
+
+In addition to the two new fields, this version of the form adds in some jQuery,
+which is available from www.jquery.com. jQuery is a free, downloadable JavaScript
+library that makes almost everything in JavaScript a lot easier. In addition to the core
+jQuery library, there are two jQuery plug-ins, which you can see near the top of the
+code: one for general validation (jquery.validate.min.js) and another specifically for
+password validation (jquery.validate.password.js). You can download both of these
+plug-ins from www.jquery.bassistance.de.
+
+https://jquery.com/download/
+jquery-3.4.1
+
+https://bassistance.de/jquery-plugins/
+https://jqueryvalidation.org/
+jquery.validate
+
+https://www.jqueryscript.net/form/Password-Strength-Match-Validation-Plugin-jQuery.html
+jquery.password-validation
+ 
+<link href="../css/jquery.validate.password.css" rel="stylesheet"
+type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript"
+src="../js/jquery.validate.password.js"></script>
+
+
+
+ <input type="text" class="form-control" id="" name="pettyrequests[]"><?php htmlout($pettyrequest['amount']);?>
+ 
+ 
+ stock service api
+ http://localhost/altrepetty/api/stock_service.php
+ 
+ Get All Mobiles
+ http://localhost/altrepetty/restexample/mobile/list/
+ 
+ Get a specific Mobile
+ http://localhost/altrepetty/restexample/mobile/list/2/
+ 
+ 
+ Search for mobile
+ http://localhost/altrepetty/restsearch_example/mobile/list?name=apple
+ 
+ 
+ 	$pdo_statement = $pdo_conn->prepare("SELECT * FROM posts ORDER BY id DESC");
+	$pdo_statement->execute();
+	$result = $pdo_statement->fetchAll();
+ 
+ 
+ $sql = 'SELECT book_id, book_title, book_publisher FROM books WHERE book_id = :id';
+$s = $pdo->prepare($sql);
+$s->bindValue(':id', $_POST['id']);
+$s->execute();
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
