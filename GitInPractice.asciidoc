@@ -1,5 +1,5 @@
 
-
+Git In Practice pdf - total of circa 273 now on 12
 ##ASUS  http://192.168.0.23/altrepetty/api/stock_service.php
 
 ##ASUS http://192.168.0.23/altrepetty/admin/
@@ -116,8 +116,6 @@ UPDATE users
  set sql_safe_updates = 1;-- To enable Safe Updates mode, run the following:
 
 
-
-
 In addition to the two new fields, this version of the form adds in some jQuery,
 which is available from www.jquery.com. jQuery is a free, downloadable JavaScript
 library that makes almost everything in JavaScript a lot easier. In addition to the core
@@ -142,45 +140,11 @@ type="text/css" />
 <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
 <script type="text/javascript"
 src="../js/jquery.validate.password.js"></script>
-
-
-
  <input type="text" class="form-control" id="" name="pettyrequests[]"><?php htmlout($pettyrequest['amount']);?>
  
  
  stock service api
- http://localhost/altrepetty/api/stock_service.php
- 
- Get All Mobiles
- http://localhost/altrepetty/restexample/mobile/list/
- 
- Get a specific Mobile
- http://localhost/altrepetty/restexample/mobile/list/2/
- 
- 
- Search for mobile
- http://localhost/altrepetty/restsearch_example/mobile/list?name=apple
- 
- 
- 	$pdo_statement = $pdo_conn->prepare("SELECT * FROM posts ORDER BY id DESC");
-	$pdo_statement->execute();
-	$result = $pdo_statement->fetchAll();
- 
- 
- $sql = 'SELECT book_id, book_title, book_publisher FROM books WHERE book_id = :id';
-$s = $pdo->prepare($sql);
-$s->bindValue(':id', $_POST['id']);
-$s->execute();
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
  
  
  
