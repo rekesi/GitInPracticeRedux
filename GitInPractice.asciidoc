@@ -1,4 +1,6 @@
 
+GitInPracticeReduxPushTest changed on 12Oct2020 at 10:06
+hmm really
 Git In Practice pdf - total of circa 273 now on page 12(35 of 273)
 ##ASUS  http://192.168.0.23/altrepetty/api/stock_service.php
 
