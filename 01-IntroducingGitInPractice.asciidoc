@@ -1,6 +1,6 @@
 GitInPracticeRedux
 Chapter One
-
+add content for chapter 1 on 16Oct2020 at 16:31
 Chapter Two change on 12Oct2020 at 15:11
 
 GitInPracticeReduxPushTest un altro change on 12Oct2020 at 10:58
