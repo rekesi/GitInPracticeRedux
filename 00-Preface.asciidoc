@@ -1,2 +1,4 @@
 GitInPracticeRedux
 Preface
+Practice makes perfect, maybe, maybe not.
+Gotta try though.
