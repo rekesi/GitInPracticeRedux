@@ -1,2 +1,3 @@
 GitInPracticeRedux
 Preface
+Metti initial to check versioning vs tag
